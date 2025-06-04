@@ -1,0 +1,19 @@
+---
+import PersonIcon from "../icons/personIcon.astro";
+import InfoButton from "./InfoButton.astro";
+import SectionHeader from "./SectionHeader.astro";
+---
+
+<section class="p-10 rounded-2xl border border-gray-400 bg-blue-950">
+    <SectionHeader name="Experiencia">
+        <PersonIcon className="size-8"/>
+    </SectionHeader>
+
+    <div class="flex flex-wrap gap-4">
+        <InfoButton name="Piton"/>
+        <InfoButton name="Piton"/>
+        <InfoButton name="Piton"/>
+        <InfoButton name="Piton"/>
+    </div>
+
+</section>

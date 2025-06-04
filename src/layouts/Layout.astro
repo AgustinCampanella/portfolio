@@ -1,6 +1,7 @@
 ---
-import '@fontsource-variable/inter'
+import Footer from '../components/Sections/Footer.astro'
 import './src/styles/global.css'
+
 ---
 
 <!doctype html>
@@ -12,14 +13,21 @@ import './src/styles/global.css'
 		<meta name="generator" content={Astro.generator} />
 		<title>Astro Basics</title>
 	</head>
-	<body>
-		<slot />
+	<body class="max-w-5xl m-auto">
+		<main class="flex flex-col gap-10">
+			<slot />
+		</main>
+		<Footer/>
 	</body>
 </html>
 
-<style>
+<style >
 	html,
 	body {
 		font-family: 'Inter Variable', sans-serif;
+		background-color: #e5e5f7;
+		background-image: radial-gradient(#444cf7 1.3px, #e5e5f7 1.3px);
+		background-size: 20px 20px;
+		color:white;
 	}
 </style>
